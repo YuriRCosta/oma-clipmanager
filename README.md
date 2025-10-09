@@ -33,7 +33,7 @@ This clipboard manager requires the following tools:
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/oma-clipmanager.git
+git clone https://github.com/YuriRCosta/oma-clipmanager.git
 cd oma-clipmanager
 ```
 
