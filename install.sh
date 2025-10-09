@@ -76,7 +76,7 @@ echo -e "${GREEN}✓ Script installed to $INSTALL_DIR/fzf-cliphist-preview.sh${N
 echo ""
 echo -e "${BLUE}Configuring Hyprland...${NC}"
 
-BINDING_CONTENT='bindd = SUPER SHIFT, V, Clipboard Manager, exec, uwsm app -- kitty --class fzf-clip -o font_size=10 -e sh -c "cliphist list | fzf -d $'\t' --with-nth 2 --preview-window=top:50% --preview '~/.config/omarchy/bin/fzf-cliphist-preview.sh {}' | cliphist decode | wl-copy && wtype -M ctrl -M shift -k v -m ctrl -m shift"'
+BINDING_CONTENT='bindd = SUPER SHIFT, V, Clipboard Manager, exec, uwsm app -- kitty --class fzf-clip -o font_size=10 -e sh -c "cliphist list | fzf -d $'"'"'\t'"'"' --with-nth 2 --preview-window=top:50% --preview '"'"'~/.config/omarchy/bin/fzf-cliphist-preview.sh {}'"'"' | cliphist decode | wl-copy && wtype -M ctrl -M shift -k v -m ctrl -m shift"'
 
 WINDOW_RULES='windowrulev2 = size 20% 45%,class:(fzf-clip) # set the size of the window as necessary
 windowrulev2 = float,class:(fzf-clip) # ensure you have a floating window class set if you want this behavior'
